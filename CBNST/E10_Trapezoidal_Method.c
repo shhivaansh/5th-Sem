@@ -2,7 +2,7 @@
 #include <math.h>
 void details()
 {
-    printf("Name: Divyansh Dhaundiyal\nSection: D(G1)\nRno: 31\n\nTrapezoidal Method\n\n");
+    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nTrapezoidal Method\n\n");
 }
 double f(double x)
 {
