@@ -2,7 +2,7 @@
 
 void details()
 {
-    printf("Name: Divyansh Dhaundiyal\nSection: D(G1)\nRno: 31\n\nEuler's Method\n\n");
+    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nSimpson's 1/3 Method\n\n");
 }
 
 float fn(float x, float y)
