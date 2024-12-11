@@ -14,14 +14,14 @@ double trapezoidal_rule(double a, double b, int n)
     double x, sum = 0.0;
     x = a + 0 * h;
     printf("x0 = %lf\ty0 = %lf\n", x, f(x));
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         x = a + i * h;
         sum += f(x);
         printf("x%d = %lf\ty%d = %lf\n", i, x, i, f(x));
     }
     x = a + n * h;
-    printf("x6 = %lf\ty6 = %lf\n", x, f(x));
+    printf("x%d = %lf\ty6 = %lf\n",n, x, f(x));
 
     sum += (f(a) + f(b)) / 2.0;
     return sum * h;
