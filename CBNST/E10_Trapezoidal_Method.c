@@ -21,7 +21,7 @@ double trapezoidal_rule(double a, double b, int n)
         printf("x%d = %lf\ty%d = %lf\n", i, x, i, f(x));
     }
     x = a + n * h;
-    printf("x%d = %lf\ty6 = %lf\n",n, x, f(x));
+    printf("x%d = %lf\ty%d = %lf\n", n, n x, f(x));
 
     sum += (f(a) + f(b)) / 2.0;
     return sum * h;
