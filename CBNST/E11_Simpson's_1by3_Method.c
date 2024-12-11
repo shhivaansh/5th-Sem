@@ -12,13 +12,12 @@ double simpson1_rule(double a, double b, int n)
 {
     double h = (b - a) / n;
     double sum = 0.0, x;
-    printf("\nStep\txi\tyi\n");
     for (int i = 0; i <= n; i++)
     {
         x = a + i * h;
         double y = f(x);
-        printf("x%d\t%.2lf\t%.2lf\n", i, x, y);
-
+        printf("x%d: %lf\ty%d: %lf\n",i,x,i,f(x));
+        
         if (i == 0 || i == n)
         {
             sum += y;
