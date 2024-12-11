@@ -2,16 +2,16 @@
 #include <math.h>
 void details()
 {
-    printf("Name: Divyansh Dhaundiyal\nSection: D(G1)\nRno: 31\n\nSimpson's 1/3 Method\n\n");
+    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nSimpson's 1/3 Method\n\n");
 }
 double f(double x)
 {
     return 1 / (1 + (x * x));
 }
-void simpson1_rule(double a, double b, int n)
+double simpson1_rule(double a, double b, int n)
 {
     double h = (b - a) / n;
-    double integral = 0, x, sum = 0.0;
+    double sum = 0.0, x;
     printf("\nStep\txi\tyi\n");
     for (int i = 0; i <= n; i++)
     {
@@ -21,20 +21,20 @@ void simpson1_rule(double a, double b, int n)
 
         if (i == 0 || i == n)
         {
-            integral += y;
+            sum += y;
         }
         else if (i % 2 == 0)
         {
-            integral += 2 * y;
+            sum += 2 * y;
         }
         else
         {
-            integral += 4 * y;
+            sum += 4 * y;
         }
     }
-    integral *= h / 3;
-    printf("\nThe approximate area under the curve is : %.4lf\n", integral);
+    return sum * (h / 3);
 }
+
 int main()
 {
     details();
@@ -47,5 +47,7 @@ int main()
     scanf("%lf", &b);
     printf("Enter the number of intervals (n): ");
     scanf("%d", &n);
-    simpson1_rule(a, b, n);
+    double integral=simpson1_rule(a, b, n);
+    printf("\nThe approximate area under the curve is : %.4lf\n", integral);
+
 }
