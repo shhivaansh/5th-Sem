@@ -2,7 +2,7 @@
 #include <math.h>
 void details()
 {
-    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nRK Method\n\n");
+    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nRunge Kutta Method\n\n");
 }
 double func(double x, double y)
 {
