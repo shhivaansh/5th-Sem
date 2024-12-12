@@ -3,7 +3,7 @@
 
 void details()
 {
-    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nSimpson's 1/3 Method\n\n");
+    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nBisection Method\n\n");
 }
 
 float f(float x)
