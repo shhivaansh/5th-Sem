@@ -3,7 +3,7 @@
 
 void details()
 {
-    printf("Name: Divyansh Dhaundiyal\nSection: D(G1)\nRno: 31\n\nNewton's Forward Interpolation Method\n\n");
+    printf("Name: Shivansh Gaur\nSection: D(G2)\nRno: 63\n\nNewton's Forward Interpolation Method\n\n");
 }
 int fact(int x)
 {
